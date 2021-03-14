@@ -1,7 +1,11 @@
 <template>
     <div>
-        <div class="jumbotron text-center">
-        <h1>Groupomania</h1>
-        </div>
+        <br>
+        <b-button variant="primary" >Add new post</b-button>
     </div>
 </template>
+
+<script>
+export default {
+}
+</script>

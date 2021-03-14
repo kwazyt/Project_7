@@ -1,20 +1,47 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/groupomania">Groupomania</router-link> |
-      <router-link to="/login">Login</router-link> |
-      <router-link to="/signup">Signup</router-link> |
-      <router-link to="/profile">Profile</router-link>
-    </div>
+    <NavBar />
+    <AddComment />
+    <AddLike />
+    <DeleteButton />
+    <Footer />
+    <NewPost />
+    <PostList />
+    <SignOut />
     <b-container>
       <router-view/>
     </b-container>
   </div>
 </template>
-|
-<style lang="scss">
-#app {
+
+<script>
+import AddComment from './components/AddComment.vue'
+import AddLike from './components/AddLike.vue'
+import DeleteButton from './components/DeleteButton.vue'
+import Footer from './components/Footer.vue'
+import NavBar from './components/NavBar.vue'
+import NewPost from './components/NewPost.vue'
+import PostList from './components/PostList.vue'
+import SignOut from './components/SignOut.vue'
+
+export default {
+  name: 'app',
+  components: {
+    AddComment,
+    AddLike,
+    DeleteButton,
+    Footer,
+    NavBar,
+    NewPost,
+    PostList,
+    SignOut
+  }
+}
+
+</script>
+
+<style lang = scss>
+ #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,5 +60,10 @@
       color: #42b983;
     }
   }
+}
+
+#logo{
+    max-width: 35%;
+    height: auto;
 }
 </style>
