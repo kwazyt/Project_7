@@ -5,7 +5,6 @@
     <AddLike />
     <DeleteButton />
     <Footer />
-    <NewPost />
     <PostList />
     <SignOut />
     <b-container>
@@ -20,7 +19,6 @@ import AddLike from './components/AddLike.vue'
 import DeleteButton from './components/DeleteButton.vue'
 import Footer from './components/Footer.vue'
 import NavBar from './components/NavBar.vue'
-import NewPost from './components/NewPost.vue'
 import PostList from './components/PostList.vue'
 import SignOut from './components/SignOut.vue'
 
@@ -32,7 +30,6 @@ export default {
     DeleteButton,
     Footer,
     NavBar,
-    NewPost,
     PostList,
     SignOut
   }

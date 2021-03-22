@@ -1,11 +1,20 @@
 <template>
     <div>
-        <br>
-        <b-button variant="primary" >Add new post</b-button>
+        <div id="app">
+            <NewPost />
+            <Post />
+        </div>
     </div>
 </template>
 
 <script>
+import NewPost from '../components/NewPost.vue'
+import Post from '../components/Post.vue'
 export default {
+  name: 'app',
+  components: {
+    NewPost,
+    Post
+  }
 }
 </script>
